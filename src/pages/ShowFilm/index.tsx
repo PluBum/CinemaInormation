@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { getFilm } from "../../request";
 import { OneFilm } from "../../types";
 import { useNavigate, useParams } from "react-router-dom";
-import ReactPlayer from "react-player/youtube";
 
 import {
   BackButton,

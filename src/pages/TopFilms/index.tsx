@@ -13,7 +13,7 @@ import { Navigation } from "swiper/modules";
 import { FilmCardComponent } from "./components/cardTopFilm";
 import { Film, Premiers } from "../../types";
 import { FilmPremierComponent } from "./components/cardPremier";
-import { FilmTitle, FilmsDescription } from "./style";
+import { FilmTitle } from "./style";
 import LoadingRoll from "../../components/LoadingRoll";
 import { CarouselContainer } from "../FilmCollection/style/style";
 

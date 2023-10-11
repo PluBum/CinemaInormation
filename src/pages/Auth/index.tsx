@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthButton, AuthContainer, AuthInput } from "./styled";
+import { AuthContainer } from "./styled";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
-import { FilmText } from "../ShowFilm/style";
 
 export const AuthPage = () => {
   const [localValue, setLocalValue] = useState<string>("");

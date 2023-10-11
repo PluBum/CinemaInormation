@@ -36,7 +36,6 @@ interface MediaGroupRait {
 }
 export const CollectionYears = () => {
   const currentYear = new Date().getFullYear();
-  const currentYearString = currentYear.toString();
   const [filmsCollection, setFilmsCollection] = useState<OneFilm[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [dateChange, setDateChange] = useState(false);
