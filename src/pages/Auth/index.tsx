@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContainer } from "./styled";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
@@ -47,6 +47,14 @@ export const AuthPage = () => {
           <Button onClick={useLogoutTimer} style={{ marginLeft: "10px" }}>
             Ввод
           </Button>
+          <div style={{ marginTop: "10px", display: "flex", justifyContent: "center" }}>
+            <Link
+              style={{ textDecoration: "none", color: "purple", fontFamily: "Montserrat", fontWeight: "300" }}
+              to="https://kinopoiskapiunofficial.tech/"
+            >
+              Получите ключ по ссылке
+            </Link>
+          </div>
         </div>
       </div>
     </AuthContainer>
