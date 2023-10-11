@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { getFilm } from "../../request";
 import { OneFilm } from "../../types";
 import { useNavigate, useParams } from "react-router-dom";
+import ReactPlayer from "react-player/youtube";
+
 import {
   BackButton,
   FilmBLock,
@@ -16,6 +18,7 @@ import {
   Syka,
 } from "./style";
 import LoadingRoll from "../../components/LoadingRoll";
+import VideoComponent from "../../components/VideoPlayer";
 
 export const FilmPage = () => {
   const [film, setFilm] = useState<OneFilm | null>(null);
@@ -83,7 +86,9 @@ export const FilmPage = () => {
         <FilmBLock>
           <div>
             <Syka src={film?.posterUrl} />
+            <VideoComponent />
           </div>
+
           <FilmContainer>
             <FilmTextTitle>
               {film?.nameRu} ({film?.year})

@@ -41,6 +41,7 @@ export const FilmTextSmall = styled.a`
   font-family: Montserrat;
 `;
 export const FilmContainer = styled.div`
+  margin-left: 10px;
   width: 60vw;
 `;
 export const FilmElement = styled.div`

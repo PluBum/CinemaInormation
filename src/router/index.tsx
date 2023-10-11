@@ -7,13 +7,14 @@ import { FilmCollection } from "../pages/FilmCollection";
 import { CollectionTop } from "../pages/FilmCollection/TopCollection/CollectionTop";
 import { CollectionPremier } from "../pages/FilmCollection/TopCollection/CollectionPremier";
 import { CollectionYears } from "../pages/FilmCollection/TopCollection/CollectionYears";
+import { TemplateLayot } from "../components/TemplateLayot";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <div>
-        <HeaderPage />
+        <TemplateLayot />
         <MainPage />
       </div>
     ),
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
     path: "/film/:id",
     element: (
       <div>
-        <HeaderPage />
+        <TemplateLayot />
         <FilmPage />
       </div>
     ),
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
     path: "/collection",
     element: (
       <div>
-        <HeaderPage />
+        <TemplateLayot />
         <FilmCollection />
       </div>
     ),

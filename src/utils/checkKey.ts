@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-const navigate = useNavigate();
 export const checkKey = () => {
+  const navigate = useNavigate();
   const key = localStorage.getItem("myKey");
   if (!key) {
     navigate("/auth");
